@@ -1,25 +1,27 @@
 import React from 'react';
-import { Link } from 'react-router-dom';
+import { BrowserRouter, Link } from 'react-router-dom';
 import "./Navbar.css";
 import logo from '../../logo.svg'
 
 function Navbar() {
     return (
-        <nav>
-            <img src={logo} />
-            <ul>
-                <li>
-                    <Link to="/">Home</Link>
-                </li>
-                <li>
-                    <Link to="/projects">Projects</Link> 
-                    {/* Should lead to scrolling down to projects section on page */}
-                </li>
-                <li>
-                    <Link to="/contact">Contact</Link>
-                </li>
-            </ul>
-        </nav>
+        <div>
+            <nav>
+                <img src={logo} className='logo' />
+                <BrowserRouter>
+                    <div className='pages'>
+                        <Link to="/">Home</Link>
+                        <Link to="/projects">Projects</Link>
+                        {/* Should lead to scrolling down to projects section on page */}
+                        <Link to="/contact">Contact</Link>
+                    </div>
+                </BrowserRouter>
+            </nav>
+            <div className='navSpace'>
+                
+            </div>
+        </div>
+        
     );
 }
 
