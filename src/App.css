@@ -1,0 +1,11 @@
+.sectionHeader {
+    text-align: center;
+    width: 100%;
+    font-size: 6rem;
+    padding: 50px 0;
+    color: white;
+    font-family: 'Roboto';
+    letter-spacing: 3px;
+    text-shadow: 4px 4px 8px black;
+    font-weight: 700;
+}
