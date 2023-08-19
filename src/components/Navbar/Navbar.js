@@ -12,7 +12,7 @@ const Navbar = () => {
                     <div className='pages'>
                         <Link to="/">Home</Link>
                         <Link to="/projects">Projects</Link>
-                        <Link to="/contact">Contact Me</Link>
+                        <Link to="/contact">Contact</Link>
                     </div>
                 </BrowserRouter>
             </nav>
